@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Data, Design, and Leadership Hub | Janelle Grimme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio showcasing data analytics, business technology projects, and veteran resources." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Home">D·D·L Hub</a>
+      <p class="tagline">Data • Design • Leadership</p>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a aria-current="page" href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects &amp; Skills</a></li>
+        <li><a href="veterans.html">Veteran Resources</a></li>
+        <li><a href="interests.html">Personal Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" role="region" aria-label="Intro">
+      <h1 class="hero__title">Hi, I am Janelle — A Data &amp; Operations-minded Student Veteran</h1>
+      <p class="hero__subtitle">I analyze, organize, and present work that helps teams make better decisions.</p>
+
+    <section class="features" aria-label="Highlights">
+      <article class="card">
+        <h2>Highlighted Project</h2>
+        <p>Tableau dashboard + Excel Solver model used to streamline event planning decisions.</p>
+        <p><a class="btn" href="projects.html">See Projects</a></p>
+      </article>
+      <article class="card">
+        <h2>Veteran Resource Spotlight</h2>
+        <p>Central links for ASU student veterans, benefits, and academic support.</p>
+        <p><a class="btn" href="veterans.html">Explore Resources</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Janelle Grimme</p>
+    <p>
+      External link: <a href="https://veterans.asu.edu/" rel="noopener" target="_blank">ASU Pat Tillman Veterans Center</a> ·
+      Email: <a class="email-link" href="mailto:jgrimme1@asu.edu">jgrimme1@asu.edu</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
