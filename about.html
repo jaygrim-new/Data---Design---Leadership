@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>About Me | Data, Design, and Leadership Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Janelle Grimme — student veteran focused on data and operations." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Home">D·D·L Hub</a>
+      <p class="tagline">Data • Design • Leadership</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a aria-current="page" href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects &amp; Skills</a></li>
+        <li><a href="veterans.html">Veteran Resources</a></li>
+        <li><a href="interests.html">Personal Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <h1 class="hero__title">About Me</h1>
+      <p class="hero__subtitle">I am a student veteran who likes tidy processes, clear communication, and practical data.</p>
+    </section>
+
+    <section class="container" aria-label="Summary">
+      <h2>Summary</h2>
+      <p>
+        I build simple, reliable systems so teams can move faster. My interests sit at the intersection of
+        data, operations, and service especially supporting student veterans. This site is a small but honest
+        portfolio of what I am building and learning.
+      </p>
+    </section>
+
+    <section class="container" aria-label="Quick facts">
+      <h2>Quick Facts</h2>
+      <ul class="quicklinks">
+        <li><strong>Focus:</strong> data basics, process cleanup, and clear docs</li>
+        <li><strong>Strengths:</strong> organization, follow through, and communication</li>
+        <li><strong>Tools:</strong> HTML/CSS, Excel/Sheets, PowerPoint, MP4</li>
+        <li><strong>Community:</strong> veteran resources and peer support</li>
+      </ul>
+    </section>
+
+    <section class="container" aria-label="Experience and education">
+      <h2>Experience &amp; Education</h2>
+      <div class="card" style="margin-bottom:1rem;">
+        <h3 style="margin-top:0;">Recent Experience</h3>
+        <p>
+          Supporting campus events and student veteran initiatives. I enjoy turning scattered notes into
+          simple checklists, trackers, and how to guides that new staff can follow on day one.
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0;">Education</h3>
+        <p>
+          Coursework in computing and information systems along with projects focused on web fundamentals and
+          practical data tasks. Current class: CIS 300 (this portfolio is part of the final).
+        </p>
+      </div>
+    </section>
+
+    <section class="container" aria-label="What I am working on next">
+      <h2>What I am Working on Next</h2>
+      <ul class="quicklinks">
+        <li>Polishing the Projects page with real examples</li>
+        <li>Building a simple event tracking sheet with basic charts</li>
+        <li>Adding short how to notes for common tasks</li>
+      </ul>
+      <p style="margin-top:.75rem;">
+        Want details or a resume? <a class="btn" href="contact.html">Contact me</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Janelle Grimme</p>
+    <p>
+      External links:
+      <a href="https://veterans.asu.edu/" target="_blank" rel="noopener">ASU Pat Tillman Veterans Center</a> ·
+      <a href="https://vetengagement.asu.edu/" target="_blank" rel="noopener">Office for Veteran and Military Academic Engagement (OVMAE)</a> ·
+      Email: <a class="email-link" href="mailto:jgrimme1@asu.edu">jgrimme1@asu.edu</a>
+    </p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
