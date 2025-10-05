@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Projects & Skills | Data, Design, and Leadership Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Current work, in-progress items, and a simple skills matrix for quick review." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html">D·D·L Hub</a>
+      <p class="tagline">Data • Design • Leadership</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a aria-current="page" href="projects.html">Projects &amp; Skills</a></li>
+        <li><a href="veterans.html">Veteran Resources</a></li>
+        <li><a href="interests.html">Personal Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <h1 class="hero__title">Projects &amp; Skills</h1>
+      <p class="hero__subtitle">Done, in progress, and planned — in one place for quick scanning.</p>
+    </section>
+
+    <section class="container" id="site-build" aria-label="Portfolio Website">
+      <h2>Project: Portfolio Website (this site)</h2>
+      <p><strong>Status:</strong> Live</p>
+      <ul>
+        <li>Semantic HTML5 layout (header, nav, main, footer)</li>
+        <li>External stylesheet with a consistent color palette and centered layout</li>
+        <li>Short MP4 title card video exported from PowerPoint (no camera, no audio)</li>
+        <li>Mobile-friendly spacing and readable typography</li>
+      </ul>
+      <p><a class="btn" href="index.html">View Home Page</a></p>
+    </section>
+
+    <section class="container" id="resume-cleanup" aria-label="Resume Data Cleanup">
+      <h2>Project: Resume Data Cleanup (in progress)</h2>
+      <p><strong>Status:</strong> In progress</p>
+      <p>Goal: create a simple spreadsheet that organizes resume content into clean fields (role, dates, bullets, impact) with filters and basic validation so it is easy to update and reuse.</p>
+      <ul>
+        <li>Columns for role, organization, dates, responsibilities, results</li>
+        <li>Simple data validation and sorting</li>
+        <li>Export to PDF for quick recruiter sharing</li>
+      </ul>
+    </section>
+
+    <section class="container" id="event-tracker" aria-label="Event Tracking Sheet">
+      <h2>Project: Event Tracking Sheet (planned)</h2>
+      <p><strong>Status:</strong> Planned</p>
+      <p>Goal: a lightweight tracker for events with fields for date, campus, headcount, notes, and follow-ups. Basic chart for totals by month.</p>
+      <ul>
+        <li>Drop-downs for campus and event type</li>
+        <li>Conditional formatting for follow-ups</li>
+        <li>Simple chart for monthly totals</li>
+      </ul>
+    </section>
+
+    <section class="container" aria-label="Skills Matrix">
+      <h2>Skills Matrix</h2>
+      <p class="hero__subtitle">Quick snapshot of what I use now and what I am building next.</p>
+
+      <div style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Skill</th>
+              <th scope="col">Level</th>
+              <th scope="col">Evidence / Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML &amp; CSS</td>
+              <td>Intermediate</td>
+              <td><a href="index.html">This site’s layout and styles</a></td>
+            </tr>
+            <tr>
+              <td>Accessibility Basics</td>
+              <td>Developing</td>
+              <td>Semantic tags, color contrast, link focus, alt text</td>
+            </tr>
+            <tr>
+              <td>Excel for Organization</td>
+              <td>Developing</td>
+              <td>Resume data cleanup (in progress)</td>
+            </tr>
+            <tr>
+              <td>Google Sheets</td>
+              <td>Developing</td>
+              <td>Event tracking sheet (planned)</td>
+            </tr>
+            <tr>
+              <td>PowerPoint → MP4</td>
+              <td>Proficient</td>
+              <td>Home page title card video (hosted locally)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Janelle Grimme</p>
+    <p>
+      External links:
+      <a target="_blank" rel="noopener" href="https://veterans.asu.edu/">ASU Pat Tillman Veterans Center</a> ·
+      <a target="_blank" rel="noopener" href="https://vetengagement.asu.edu/">Office for Veteran and Military Academic Engagement (OVMAE)</a> ·
+      Email: <a class="email-link" href="mailto:jgrimme1@asu.edu">jgrimme1@asu.edu</a>
+    </p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
+</body>
+</html>
