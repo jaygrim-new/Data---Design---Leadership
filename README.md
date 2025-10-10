@@ -18,5 +18,4 @@ A simple yet accessible portfolio for recruiters and student veterans.
 - Video uses the **`<video>`** tag with a locally hosted MP4
 
 ## Local preview
-Open `index.html` in your browser  
-—or— use VS Code “Live Server”.
+Open `index.html` in your browser or use VS Code “Live Server”.
