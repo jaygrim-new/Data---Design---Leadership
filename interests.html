@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Personal Interests | Data, Design, and Leadership Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A few things I enjoy outside of class: making, movement, and learning." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="index.html" aria-label="Home">D·D·L Hub</a>
+      <p class="tagline">Data • Design • Leadership</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects &amp; Skills</a></li>
+        <li><a href="veterans.html">Veteran Resources</a></li>
+        <li><a aria-current="page" href="interests.html">Personal Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <h1 class="hero__title">Personal Interests</h1>
+      <p class="hero__subtitle">Small habits that help me reset and learn.</p>
+    </section>
+
+    <section class="features" aria-label="Interest Cards">
+      <article class="card">
+        <h2>Making &amp; Design</h2>
+        <p>I like simple, useful projects—clean layouts, practical visuals, and occasional hands-on making.</p>
+        <ul class="quicklinks">
+          <li>Sketching layouts before building</li>
+          <li>Lightweight color and type studies</li>
+          <li>Turning slides into short MP4s</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Movement</h2>
+        <p>Short walks, basic strength, and breathing work. It helps me focus and keeps energy steady for classes.</p>
+        <ul class="quicklinks">
+          <li>10–20 minute walks</li>
+          <li>Simple body-weight exercises</li>
+          <li>Diaphragmatic breathing</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Learning</h2>
+        <p>I enjoy structured learning with small milestones—reading guides, checklists, and mini-projects.</p>
+        <ul class="quicklinks">
+          <li>Short technical articles</li>
+          <li>Note cards and checklists</li>
+          <li>Mini data tasks in Excel/Sheets</li>
+        </ul>
+        <p style="margin-top:.5rem;">
+          Favorite external read: <a class="btn btn--outline" href="https://web.dev/learn/" target="_blank" rel="noopener">web.dev Learn</a>
+        </p>
+      </article>
+    </section>
+
+    <section class="container" aria-label="What’s Next">
+      <h2>What’s Next</h2>
+      <p>Posting a few small process notes and progress snapshots as I finish class projects. If you want an update or have a suggestion, reach out.</p>
+      <p><a class="btn" href="contact.html">Contact me</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Janelle Grimme</p>
+    <p>
+      External links:
+      <a href="https://veterans.asu.edu/" target="_blank" rel="noopener">ASU Pat Tillman Veterans Center</a> ·
+      <a href="https://vetengagement.asu.edu/" target="_blank" rel="noopener">Office for Veteran and Military Academic Engagement (OVMAE)</a> ·
+      Email: <a class="email-link" href="contact.html#email">jgrimme1@asu.edu</a>
+    </p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
+</body>
+</html>
