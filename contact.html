@@ -5,8 +5,15 @@
   <meta charset="utf-8" />
   <title>Contact | Data, Design, and Leadership Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact form for recruiters, classmates, and student veterans." />
+  <meta name="description" content="Contact form for recruiters, classmates, and student veterans with quick subject options and a short message field." />
   <link rel="stylesheet" href="styles.css" />
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-47BJKMX5NC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-47BJKMX5NC');
+  </script>
 </head>
 
 <body>
@@ -29,8 +36,18 @@
 
   <main id="main" class="container">
     <h1 class="hero__title">Contact</h1>
-    <p class="hero__subtitle">Send a quick note.
-    </p>
+    <p class="hero__subtitle">Send a quick note.</p>
+
+    <!-- Email copy block -->
+    <section id="email" aria-label="Email">
+      <p>
+        Prefer email?
+        <button type="button" id="copyEmail" class="btn btn--outline" aria-label="Copy email address">
+          Copy email
+        </button>
+        <span id="copyStatus" aria-live="polite" style="margin-left:.5rem;"></span>
+      </p>
+    </section>
 
     <form action="#" method="post" novalidate>
       <div class="form-row">
@@ -39,8 +56,8 @@
       </div>
 
       <div class="form-row">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
+        <label for="emailField">Email</label>
+        <input id="emailField" name="email" type="email" required />
       </div>
 
       <div class="form-row">
@@ -72,10 +89,28 @@
       External links:
       <a href="https://veterans.asu.edu/" target="_blank" rel="noopener">ASU Pat Tillman Veterans Center</a> ·
       <a href="https://vetengagement.asu.edu/" target="_blank" rel="noopener">Office for Veteran and Military Academic Engagement (OVMAE)</a> ·
-      Email: <a class="email-link" href="mailto:jgrimme1@asu.edu">jgrimme1@asu.edu</a>
+      Email: <a class="email-link" href="contact.html#email">jgrimme1@asu.edu</a>
     </p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      const btn = document.getElementById('copyEmail');
+      const status = document.getElementById('copyStatus');
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText('jgrimme1@asu.edu');
+            status.textContent = 'Copied!';
+            setTimeout(() => status.textContent = '', 2000);
+          } catch {
+            status.textContent = 'Press Ctrl+C to copy: jgrimme1@asu.edu';
+          }
+        });
+      }
+    }());
+  </script>
 
 </body>
 </html>
