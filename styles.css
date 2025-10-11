@@ -63,7 +63,7 @@ a:hover, a:focus-visible{ text-decoration: underline; }
   gap: .75rem;
 }
 
-/* High-contrast logo badge */
+/* High contrast logo badge */
 .logo{
   text-decoration: none;
   font-weight: 700;
@@ -133,6 +133,19 @@ a:hover, a:focus-visible{ text-decoration: underline; }
   border: 1px solid var(--border);
   border-radius: .6rem;
 }
+
+.intro-video video {
+  display: block;
+  margin-inline: auto;
+}
+
+.intro-video figcaption {
+  text-align: center;
+  margin-top: .5rem;
+  color: var(--secondary);
+}
+
+img, video { max-width: 100%; height: auto; display: block; }
 
 /* Feature cards grid */
 .features{
