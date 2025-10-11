@@ -5,17 +5,26 @@
   <meta charset="utf-8" />
   <title>Data, Design, and Leadership Hub | Janelle Grimme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio showcasing data analytics, business technology projects, and veteran resources." />
+  <meta name="description" content="Portfolio for data, design, and leadership projects with a short demo video, highlights,
+   and links for student veterans." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css" />
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-47BJKMX5NC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-47BJKMX5NC');
+  </script>
 </head>
+
 <body>
   <header class="site-header">
     <div class="brand">
       <a class="logo" href="index.html" aria-label="Home">D·D·L Hub</a>
       <p class="tagline">Data • Design • Leadership</p>
     </div>
-
     <nav class="site-nav" aria-label="Primary">
       <ul>
         <li><a aria-current="page" href="index.html">Home</a></li>
@@ -33,32 +42,37 @@
       <h1 class="hero__title">Hi, I am Janelle — A Data and Operations Minded Student Veteran</h1>
       <p class="hero__subtitle">I analyze, organize, and present work that helps teams make better decisions.</p>
 
-    <figure class="intro-video">
-  <video controls preload="metadata" width="640" poster="DDL.png" playsinline>
-    <source src="DDL.mp4" type="video/mp4" />
-    Sorry, your browser does not support HTML5 video.
-  </video>
-  <figcaption>Data, Design, and Leadership Hub</figcaption>
-</figure>
+      <figure class="intro-video">
+        <video controls preload="metadata" width="640" height="360" poster="DDL.png" playsinline-describedby="video-desc">
+          <source src="DDL.mp4" type="video/mp4" />
+          Sorry, your browser does not support HTML5 video.
+        </video>
+        <figcaption id="video-desc">A 16 second welcome that sets the tone for the site. It opens with a simple title card, 
+          then shows a Spring 2025 Semester snapshot for military connected students. The last slide is a U.S. map that highlights 
+          totals and breakouts for spouses and dependents, active duty, veterans, and guard and reserves.</figcaption>
+      </figure>
+    </section>
 
     <section class="features" aria-label="Highlights">
       <article class="card">
         <h2>Featured Work</h2>
-        <p><strong>Website Build (this site):</strong> mobile-friendly, accessible, and organized for quick review.</p>
+        <p><strong>Website Building:</strong> This site includes a mobile-friendly, accessible, and organized design ideal for quick
+           review.</p>
         <ul>
           <li>Clear navigation and consistent styling</li>
           <li>Readable color palette and semantic HTML</li>
-          <li>Planned: add small data examples as they are ready</li>
+          <li>Coming Soon: Adding small data examples as they are ready</li>
         </ul>
         <p><a class="btn" href="projects.html">View Projects &amp; Skills</a></p>
       </article>
 
       <article class="card">
         <h2>Veteran Resource Spotlight</h2>
-        <p>Curated links for student veterans at Arizona State University—benefits, academics, and community.</p>
+        <p>Links for student veterans at Arizona State University that include benefits, academics, and community.</p>
         <ul>
           <li><a target="_blank" rel="noopener" href="https://veterans.asu.edu/">ASU Pat Tillman Veterans Center</a></li>
-          <li><a target="_blank" rel="noopener" href="https://vetengagement.asu.edu/">Office for Veteran and Military Academic Engagement (OVMAE)</a></li>
+          <li><a target="_blank" rel="noopener" href="https://vetengagement.asu.edu/">Office for Veteran and Military Academic 
+            Engagement (OVMAE)</a></li>
           <li><a target="_blank" rel="noopener" href="https://www.va.gov/">VA.gov</a></li>
         </ul>
         <p><a class="btn" href="veterans.html">Explore Resources</a></p>
@@ -71,14 +85,13 @@
     <p>
       External links:
       <a href="https://veterans.asu.edu/" rel="noopener" target="_blank">ASU Pat Tillman Veterans Center</a> ·
-      <a href="https://vetengagement.asu.edu/" rel="noopener" target="_blank">Office for Veteran and Military Academic Engagement (OVMAE)</a> ·
-      Email: <a class="email-link" href="mailto:jgrimme1@asu.edu">jgrimme1@asu.edu</a>
+      <a href="https://vetengagement.asu.edu/" rel="noopener" target="_blank">Office for Veteran and Military Academic Engagement
+         (OVMAE)</a> ·
+      Email: <a class="email-link" href="contact.html#email">jgrimme1@asu.edu</a>
     </p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
